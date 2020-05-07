@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="7" time="1.247">
+  <testsuite name="Product" errors="0" failures="7" skipped="0" timestamp="2020-05-04T01:55:08" time="0.612" tests="7">
+    <testcase classname="Product Get array of products with names and categories from ids" name="Product Get array of products with names and categories from ids" time="0.008">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  -  0
++ Received  + 67
+
+  Array [
+    Object {
+      &quot;category&quot;: &quot;T-SHIRTS&quot;,
++     &quot;id&quot;: 120,
+      &quot;name&quot;: &quot;DISNEY CRUELLA© T-SHIRT&quot;,
++     &quot;promotions&quot;: Array [
++       Object {
++         &quot;looks&quot;: Array [
++           &quot;SINGLE LOOK&quot;,
++           &quot;DOUBLE LOOK&quot;,
++         ],
++         &quot;price&quot;: 109.99,
+        },
+        Object {
++         &quot;looks&quot;: Array [
++           &quot;TRIPLE LOOK&quot;,
++           &quot;FULL LOOK&quot;,
++         ],
++         &quot;price&quot;: 99.99,
++       },
++     ],
++     &quot;regularPrice&quot;: 114.99,
++   },
++   Object {
+      &quot;category&quot;: &quot;PANTS&quot;,
++     &quot;id&quot;: 230,
+      &quot;name&quot;: &quot;KNIT JOGGING PANTS&quot;,
++     &quot;promotions&quot;: Array [
++       Object {
++         &quot;looks&quot;: Array [
++           &quot;SINGLE LOOK&quot;,
++         ],
++         &quot;price&quot;: 174.99,
++       },
++       Object {
++         &quot;looks&quot;: Array [
++           &quot;DOUBLE LOOK&quot;,
++         ],
++         &quot;price&quot;: 154.99,
+        },
+        Object {
++         &quot;looks&quot;: Array [
++           &quot;TRIPLE LOOK&quot;,
++           &quot;FULL LOOK&quot;,
++         ],
++         &quot;price&quot;: 144.99,
++       },
++     ],
++     &quot;regularPrice&quot;: 174.99,
++   },
++   Object {
+      &quot;category&quot;: &quot;SHOES&quot;,
++     &quot;id&quot;: 310,
+      &quot;name&quot;: &quot;ASYMMETRICAL LEATHER SLIDE HEELS&quot;,
++     &quot;promotions&quot;: Array [
++       Object {
++         &quot;looks&quot;: Array [
++           &quot;SINGLE LOOK&quot;,
++           &quot;DOUBLE LOOK&quot;,
++           &quot;TRIPLE LOOK&quot;,
++           &quot;FULL LOOK&quot;,
++         ],
++         &quot;price&quot;: 79.99,
+        },
++     ],
++     &quot;regularPrice&quot;: 89.99,
++   },
+    Object {
+      &quot;category&quot;: &quot;BAGS&quot;,
++     &quot;id&quot;: 490,
+      &quot;name&quot;: &quot;SOFT FLAP BACKPACK&quot;,
++     &quot;promotions&quot;: Array [
++       Object {
++         &quot;looks&quot;: Array [
++           &quot;SINGLE LOOK&quot;,
++           &quot;DOUBLE LOOK&quot;,
++           &quot;TRIPLE LOOK&quot;,
++           &quot;FULL LOOK&quot;,
++         ],
++         &quot;price&quot;: 79.99,
++       },
++     ],
++     &quot;regularPrice&quot;: 99.99,
+    },
+  ]
+    at Object.&lt;anonymous&gt; (/Users/williansteinagel/codenation/mod4/nodejs-12/test/index.test.js:81:25)
+    at Object.asyncJestTest (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Product Get cart promo type from products category" name="Product Get cart promo type from products category" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;FULL LOOK&quot;
+Received: undefined
+    at Object.&lt;anonymous&gt; (/Users/williansteinagel/codenation/mod4/nodejs-12/test/index.test.js:85:24)
+    at Object.asyncJestTest (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Product Get price information" name="Product Get price information" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;15.63%&quot;
+Received: undefined
+    at Object.&lt;anonymous&gt; (/Users/williansteinagel/codenation/mod4/nodejs-12/test/index.test.js:93:24)
+    at Object.asyncJestTest (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Get Shopping Cart Deve retornar um carrinho de compras a partir do array de IDs do exemplo 1" name="Get Shopping Cart Deve retornar um carrinho de compras a partir do array de IDs do exemplo 1" time="0.002">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  -  4
++ Received  + 71
+
+  Object {
+-   &quot;discount&quot;: &quot;15.63%&quot;,
+-   &quot;discountValue&quot;: &quot;75.00&quot;,
++   &quot;discount&quot;: undefined,
++   &quot;discountValue&quot;: undefined,
+    &quot;products&quot;: Array [
+      Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 120,
+        &quot;name&quot;: &quot;DISNEY CRUELLA© T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 109.99,
+          },
+          Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 99.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 114.99,
++     },
++     Object {
+        &quot;category&quot;: &quot;PANTS&quot;,
++       &quot;id&quot;: 230,
+        &quot;name&quot;: &quot;KNIT JOGGING PANTS&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 174.99,
+          },
+          Object {
++           &quot;looks&quot;: Array [
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 154.99,
++         },
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 144.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 174.99,
++     },
++     Object {
+        &quot;category&quot;: &quot;SHOES&quot;,
++       &quot;id&quot;: 310,
+        &quot;name&quot;: &quot;ASYMMETRICAL LEATHER SLIDE HEELS&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 79.99,
+          },
++       ],
++       &quot;regularPrice&quot;: 89.99,
++     },
+      Object {
+        &quot;category&quot;: &quot;BAGS&quot;,
++       &quot;id&quot;: 490,
+        &quot;name&quot;: &quot;SOFT FLAP BACKPACK&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 79.99,
+          },
+        ],
+-   &quot;promotion&quot;: &quot;FULL LOOK&quot;,
+-   &quot;totalPrice&quot;: &quot;404.96&quot;,
++       &quot;regularPrice&quot;: 99.99,
++     },
++   ],
++   &quot;promotion&quot;: undefined,
++   &quot;totalPrice&quot;: undefined,
+  }
+    at Object.&lt;anonymous&gt; (/Users/williansteinagel/codenation/mod4/nodejs-12/test/index.test.js:101:18)
+    at Object.asyncJestTest (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Get Shopping Cart Deve retornar um carrinho de compras a partir do array de IDs do exemplo 2" name="Get Shopping Cart Deve retornar um carrinho de compras a partir do array de IDs do exemplo 2" time="0.002">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  -  4
++ Received  + 66
+
+  Object {
+-   &quot;discount&quot;: &quot;4.72%&quot;,
+-   &quot;discountValue&quot;: &quot;25.00&quot;,
++   &quot;discount&quot;: undefined,
++   &quot;discountValue&quot;: undefined,
+    &quot;products&quot;: Array [
+      Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 130,
+        &quot;name&quot;: &quot;RUBBERIZED PRINTED T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 139.99,
+          },
+          Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 129.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 144.99,
++     },
++     Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 140,
+        &quot;name&quot;: &quot;CONTRAST SLOGAN T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 129.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 149.99,
+      },
+      Object {
+        &quot;category&quot;: &quot;PANTS&quot;,
++       &quot;id&quot;: 230,
+        &quot;name&quot;: &quot;KNIT JOGGING PANTS&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 174.99,
++         },
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 154.99,
++         },
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 144.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 174.99,
+      },
+      Object {
+        &quot;category&quot;: &quot;PANTS&quot;,
++       &quot;id&quot;: 260,
+        &quot;name&quot;: &quot;MENSWEAR PANTS&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 59.98,
+          },
+        ],
+-   &quot;promotion&quot;: &quot;DOUBLE LOOK&quot;,
+-   &quot;totalPrice&quot;: &quot;504.95&quot;,
++       &quot;regularPrice&quot;: 59.98,
++     },
++   ],
++   &quot;promotion&quot;: undefined,
++   &quot;totalPrice&quot;: undefined,
+  }
+    at Object.&lt;anonymous&gt; (/Users/williansteinagel/codenation/mod4/nodejs-12/test/index.test.js:107:18)
+    at Object.asyncJestTest (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Get Shopping Cart Deve retornar um carrinho de compras a partir do array de IDs do exemplo 3" name="Get Shopping Cart Deve retornar um carrinho de compras a partir do array de IDs do exemplo 3" time="0.003">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  -  4
++ Received  + 69
+
+  Object {
+-   &quot;discount&quot;: &quot;1.87%&quot;,
+-   &quot;discountValue&quot;: &quot;10.00&quot;,
++   &quot;discount&quot;: undefined,
++   &quot;discountValue&quot;: undefined,
+    &quot;products&quot;: Array [
+      Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 110,
+        &quot;name&quot;: &quot;PINK PANTHER™ T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 124.99,
++         },
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 109.99,
+          },
++       ],
++       &quot;regularPrice&quot;: 124.99,
++     },
+      Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 120,
+        &quot;name&quot;: &quot;DISNEY CRUELLA© T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 109.99,
+          },
+          Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 99.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 114.99,
++     },
++     Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 130,
+        &quot;name&quot;: &quot;RUBBERIZED PRINTED T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 139.99,
++         },
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 129.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 144.99,
+      },
+      Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 140,
+        &quot;name&quot;: &quot;CONTRAST SLOGAN T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 129.99,
+          },
+        ],
+-   &quot;promotion&quot;: &quot;SINGLE LOOK&quot;,
+-   &quot;totalPrice&quot;: &quot;524.96&quot;,
++       &quot;regularPrice&quot;: 149.99,
++     },
++   ],
++   &quot;promotion&quot;: undefined,
++   &quot;totalPrice&quot;: undefined,
+  }
+    at Object.&lt;anonymous&gt; (/Users/williansteinagel/codenation/mod4/nodejs-12/test/index.test.js:113:18)
+    at Object.asyncJestTest (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Get Shopping Cart Deve retornar um carrinho de compras a partir do array de IDs do exemplo 4" name="Get Shopping Cart Deve retornar um carrinho de compras a partir do array de IDs do exemplo 4" time="0.004">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  -   4
++ Received  + 105
+
+  Object {
+-   &quot;discount&quot;: &quot;14.21%&quot;,
+-   &quot;discountValue&quot;: &quot;130.00&quot;,
++   &quot;discount&quot;: undefined,
++   &quot;discountValue&quot;: undefined,
+    &quot;products&quot;: Array [
+      Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 110,
+        &quot;name&quot;: &quot;PINK PANTHER™ T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 124.99,
+          },
+          Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 109.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 124.99,
++     },
++     Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 130,
+        &quot;name&quot;: &quot;RUBBERIZED PRINTED T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 139.99,
+          },
+          Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 129.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 144.99,
++     },
++     Object {
+        &quot;category&quot;: &quot;T-SHIRTS&quot;,
++       &quot;id&quot;: 140,
+        &quot;name&quot;: &quot;CONTRAST SLOGAN T-SHIRT&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 129.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 149.99,
+      },
+      Object {
+        &quot;category&quot;: &quot;PANTS&quot;,
++       &quot;id&quot;: 230,
+        &quot;name&quot;: &quot;KNIT JOGGING PANTS&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 174.99,
+          },
+          Object {
++           &quot;looks&quot;: Array [
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 154.99,
++         },
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 144.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 174.99,
++     },
++     Object {
+        &quot;category&quot;: &quot;SHOES&quot;,
++       &quot;id&quot;: 310,
+        &quot;name&quot;: &quot;ASYMMETRICAL LEATHER SLIDE HEELS&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 79.99,
++         },
++       ],
++       &quot;regularPrice&quot;: 89.99,
+      },
+      Object {
+        &quot;category&quot;: &quot;SHOES&quot;,
++       &quot;id&quot;: 330,
+        &quot;name&quot;: &quot;SLINGBACK KITTEN HEEL SHOES WITH METAL DETAIL&quot;,
++       &quot;promotions&quot;: Array [
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;SINGLE LOOK&quot;,
++             &quot;DOUBLE LOOK&quot;,
++           ],
++           &quot;price&quot;: 199.99,
++         },
++         Object {
++           &quot;looks&quot;: Array [
++             &quot;TRIPLE LOOK&quot;,
++             &quot;FULL LOOK&quot;,
++           ],
++           &quot;price&quot;: 189.99,
+          },
+        ],
+-   &quot;promotion&quot;: &quot;TRIPLE LOOK&quot;,
+-   &quot;totalPrice&quot;: &quot;784.94&quot;,
++       &quot;regularPrice&quot;: 229.99,
++     },
++   ],
++   &quot;promotion&quot;: undefined,
++   &quot;totalPrice&quot;: undefined,
+  }
+    at Object.&lt;anonymous&gt; (/Users/williansteinagel/codenation/mod4/nodejs-12/test/index.test.js:119:18)
+    at Object.asyncJestTest (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/williansteinagel/codenation/mod4/nodejs-12/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
